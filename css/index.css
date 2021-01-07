@@ -1,159 +1,120 @@
-body{
-    background-color: #ebebeb;
+.navbar {
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, black), to(#004890));
+  background: linear-gradient(90deg, black 14%, #004890 100%);
+  width: 100%;
 }
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-#jumbotron-home{
-    background:linear-gradient(rgba(94, 94, 94, 0.5), rgba(27, 26, 26, 0.5)),url(/img/subaru-wrx.png);
-    min-height: 550px;
-    z-index:1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    padding-top: 100px;
-    padding-left: 50px;
-}
-.jumbotron.selling{
-    margin: 10px;
-}
-.intro-details{
-    color: white;
-}
-.btn {
-    padding: 14px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.container.cars{
-    margin-top: 10px;
-    margin-bottom: 0px;
-} 
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-.navbar.navbar-expand-md{
-    width: 100%;
-    font-size: 20px;
-    padding: 0px;
-    margin:0px;
-    position: fixed;
-    overflow: hidden;
-    z-index: 1;
-    
-}
-.nav-link{
-    color: white;
 
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: white;
 }
-#lmbot{
-    margin: auto;
-    background-color:#004890 ;
+
+.nav-link {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 100%;
+}
+
+.intro {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.486)), to(rgba(27, 26, 26, 0.5))), url(https://www.hdcarwallpapers.com/walls/2015_subaru_wrx_sti_japan-wide.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(27, 26, 26, 0.5)), url(https://www.hdcarwallpapers.com/walls/2015_subaru_wrx_sti_japan-wide.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+}
+
+#intro-text {
+  color: white;
+  position: relative;
+  font-size: 70px;
+  padding-top: 2%;
+  font-family: "Do Hyeon", sans-serif;
+  padding-left: 2.5%;
+  top: 20%;
+  overflow: hidden;
+}
+
+#intro-text1 {
+  color: white;
+  position: relative;
+  font-size: 30px;
+  top: 20%;
+  padding-left: 2.5%;
+}
+
+#learnBtn {
+  position: relative;
+  top: 30%;
+  left: 2.5%;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0.596);
+  border: solid #004890;
+  border-radius: 13px;
+  color: white;
+  padding-left: 48px;
+  padding-right: 48px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+#learnBtn:hover {
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#best_selling {
+  text-align: center;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  background: black;
+  background: radial-gradient(circle, black 6%, #004890 100%);
+  padding-top: 1.4%;
+  padding-bottom: 1%;
+}
+
+#best_selling #text-selling {
+  font-size: 50px;
+}
+
+.card {
+  background-color: #e7e7e7;
+}
+
+.mb-4 {
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    height: 94vh;
+  }
+  #intro-text {
     color: white;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    text-align: center center;
-    text-size-adjust: 40px;
-}
-#home-jum-desc{
-    height:auto;
-    width: auto;
-}
-.card{
-    height: auto ;
-    margin: auto;
-}
-.card-img-top{
-    height:auto;
-}
-.card-body{
-    height: auto;
-}
-h2{
+    position: relative;
+    font-size: 54px;
+    padding-left: 2.5%;
+    top: 10%;
+    overflow: hidden;
     text-align: center;
-    font-family: 'Russo One', sans-serif;
-}
-h4{
+  }
+  #intro-text1 {
+    font-size: 22px;
+    top: 15%;
     text-align: center;
-    font-family: 'Red Rose', cursive;
-}
-h3,h1{
-    font-family: 'Russo One', sans-serif;
-}
-p{
-    font-family: 'Red Rose', cursive;
-}
-.sm-logos{
-    
-    text-align: center;
-}
-#sm-text{
-    text-align: center;
-}
-#jumbotron-boxer{
-    background-color: #1b1c1a;
-    color: white;
-}   
-.carouselExampleCaptions{
-    height: 300px;
-}
-#best_selling{
-    background-color: #004890 ;
-    color: white;
-    padding: 0.4%;
-}
-.container.subaru{
-    max-width: 100%;
-    padding: 0;
-}
-.container.subaru img{
-    filter: brightness(45%);
-    padding: 0;
+  }
+  #learnBtn {
     margin: 0;
-    border: 0;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
-.about-boxer{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
-.jumbotron.subaru-history{
-    background:linear-gradient(rgba(15, 3, 3, 0.5), rgba(15, 3, 3, 0.5)), url(/img/subaru_wrx_history.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 68% 90%;
-    margin: 0px;
-    border: 0px;
-    padding-top: 6px;
-    padding-left:50px;
-    height: 500px;
-    color: white;
-    
-}
-#history-text{
-    padding-left:10px;
-}
-#learn-more-history{
-    text-align: center;
-    background-color: #004890;
-    border-radius: 6px;
-    padding-right: 55px;
-    padding-left: 55px;
-    padding-top:4px;
-    padding-bottom: 4px;
-    margin-left:10px;
-    color: white;
-    font-family: 'Red Rose', cursive;
-}
-.btn.btn-primary.btn-lg.active.btn-block{
-    background-color: #004890;
-    color: white;
-    font-family: 'Red Rose', cursive;
-    box-shadow: 4px 4px 4px grey;
-}
+/*# sourceMappingURL=index.css.map */
