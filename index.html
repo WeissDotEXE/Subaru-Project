@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-
+    
+    <!-- script for icons in head tag-->
+    <script src="https://kit.fontawesome.com/3e9afd2c4b.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -50,60 +52,71 @@
     <h1 id="intro-text1">Discover the world with an AWD car</h1>
     <button id="learnBtn">Learn About</button>
   </div>
-  <div id="best_selling">
-    <h2 id="text-selling">Vehicles</h2>
+  <div id="vehicles">
+    <h2 id="text-vehicles">Vehicles</h2>
+    <p>Click on vehicles</p>
   </div>
   <div class="container cars">
     <div class="row row-cols-1 row-cols-md-2">
+      
+      <!-- WRX card+details-->
       <div class="col mb-4">
         <div class=" p-3 mb-5 ">
-          <div data-aos="fade-up" class="card wrx">
-            <img id='subaru_wrx_photo' src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBLPGGg.img" class="card-img-top" alt="">
+          <button id="wrxBtn" class="carsBtn">
+          <div class="card">
+            <img  src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBLPGGg.img" class="card-img-top" alt="">
             <div class="card-body">
-              <h4 class="card-title">Subaru WRX STI 2019</h4>
-              <a href="subaru-wrx.html"  class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">View more </a>
+              <h4 class="card-title">Subaru WRX STI</h4>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class=" p-3 mb-5 " >
-          <div data-aos="fade-up" class="card impreza">
-            <img  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fst.motortrend.com%2Fuploads%2Fsites%2F10%2F2017%2F09%2F2018-subaru-impreza-base-hatchback-angular-front.png&f=1&nofb=1" class="card-img-top" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Subaru Impreza 2019</h4>
-              <a href="#" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">View more </a>
-            </div>
-          </div>
+          </div> 
+          </button>
         </div>
       </div>
       <div class="col mb-4">
         <div class=" p-3 mb-5 ">
-          <div data-aos="fade-up"  class="card forester">
-              <img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/vhs/2020-subaru-forester-25i-S.png" class="card-img-top" alt="">
+          <button id="imprezaBtn" class="carsBtn">
+          <div class="card">
+            <img  src="https://external-content.duckduckgo.com/iu/?u=https://st.motortrend.com/uploads/sites/10/2017/09/2018-subaru-impreza-base-hatchback-angular-front.png&f=1&nofb=1" class="card-img-top" alt="">
             <div class="card-body">
-              <h4 class="card-title">Subaru Forester 2020</h4>
-              <a href="#"  class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">View more </a>
+              <h4 class="card-title">Subaru Impreza</h4>
             </div>
-        </div>
-      </div>
-      </div>
-      <div class="col mb-4">
-        <div class="p-3 mb-5 ">
-          <div data-aos="fade-up" class="card brz">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fst.motortrend.com%2Fuploads%2Fsites%2F10%2F2016%2F10%2F2017-subaru-brz-limited-at-coupe-angular-front.png&f=1&nofb=1" class="card-img-top" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Subaru BRZ 2019</h4>
-              <a href="#"  class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">View more </a>
-            </div>
-          </div>
+          </div> 
+          </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <a href="vehicles.html"class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Explore All Vehicles</a><br>
+
+  <!--HERE PUT THE infos for Impreza and WRX-->
+  <div id="wrx-info" class="car-info">
+    <h1 id="wrx-info-txt">Subaru WRX</h1>
+    <button class="close-info"><i class="fas fa-times"></i></button>
   </div>
+  <div id="wrx-info1" class="car-info1">
+    <p>Duis dapibus tempus ligula, eu vulputate diam commodo ut. Sed ex mauris, luctus vel luctus nec, sagittis vel sem. 
+      Morbi varius nibh at nulla aliquet, sit amet blandit mi congue. 
+      Suspendisse potenti. Proin et felis congue, gravida ipsum ac, auctor metus. Duis maximus iaculis condimentum. Nunc sit amet dapibus dui, a placerat est.
+      Suspendisse eu felis suscipit, interdum lorem sit amet, dapibus libero.</p>
+      <a href="#">
+        <button class="view-moreBtn">View More <i class="fas fa-chevron-right"></i></button>
+      </a>
+  </div>
+
+  <div id="impreza-info" class="car-info">
+    <h1 id="impreza-info-txt">Subaru Impreza</h1>
+    <button class="close-info"><i class="fas fa-times"></i></button>
+  </div>
+  <div id="wrx-info1" class="car-info1">
+    <p>Duis dapibus tempus ligula, eu vulputate diam commodo ut. Sed ex mauris, luctus vel luctus nec, sagittis vel sem. 
+      Morbi varius nibh at nulla aliquet, sit amet blandit mi congue. 
+      Suspendisse potenti. Proin et felis congue, gravida ipsum ac, auctor metus. Duis maximus iaculis condimentum. Nunc sit amet dapibus dui, a placerat est.
+      Suspendisse eu felis suscipit, interdum lorem sit amet, dapibus libero.</p>
+      <a href="#">
+        <button class="view-moreBtn">View More <i class="fas fa-chevron-right"></i></button>
+      </a>
+  </div>
+  <!--end of infos-->
+  
   <div class="about-boxer">
     <div id="jumbotron-boxer" class="jumbotron jumbotron-fluid">
       <div data-aos="fade-up" class="container">
@@ -137,11 +150,19 @@
         </a>
       </div>
     </div>
+  <div class="yes">
+    <h1>hahah</h1>
+  </div>
+  <div >
+    <h2>cahnge 2</h2>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 </html>

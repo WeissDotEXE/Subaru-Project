@@ -2,6 +2,14 @@
 @import "./variables";
 @import "./nopadding";
 
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f9f9f9;
+}
 
 .navbar{
     background: rgb(0,0,0);
@@ -29,6 +37,8 @@
     background-size: cover;
     background-position:center;
     padding: 0px;
+    z-index: 1;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #intro-text{
     color: white;
@@ -39,7 +49,6 @@
     padding-left:2.5% ;
     top:20%;
     overflow: hidden;
-
 }
 #intro-text1{
     color: white;
@@ -65,25 +74,109 @@
     background-color: black;
     transition: 0.5s;
 }
-
 //after intro section
-#best_selling{
+#vehicles{
     text-align: center;
-    color: white;
+    color: #333;
     font-family: $headerFont;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 6%, rgba(0,72,144,1) 100%);
     padding-top: 1.4%;
     padding-bottom: 1%;
-    #text-selling{
-        font-size: 50px;
+    width: 100%;
+    #text-vehicles{
+        font-size: 49px;
     }
 }
-.card{
-    background-color: rgb(231, 231, 231);
-}
+// less space between cards
 .mb-4{
-    margin: 0px;
+    position: relative;
+    top: 60px;
+    margin-top: -70px;
+}
+.card{
+    background-color: #f9f9f9;
+    border:none;
+    border-radius: 20px;
+    transition: 0.6s;
+    .hover-car{
+        position: absolute;
+        bottom: 50%;
+        left: 37%;
+        display: none;
+        color: white;
+        font-family: $headerFont;
+        font-size: 70px;
+    }
+    .darrow-icon{
+        font-size: 40px;
+        position: relative;
+        left: 50%;
+        padding: 0px;
+    }
+}
+.card:hover {
+    
+    background-color: $primaryColor;
+    transition: 0.6s;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .darrow-icon{
+        color: white;
+    }
+}
+.card-title{
+    text-align: center;
+}
+// no outline for buttons
+#wrxBtn{
+    outline: none;
+}
+#imprezaBtn{
+    outline: none;
+}
+#foresterBtn{
+    outline: none;
+}
+#brzBtn{
+    outline: none;
+}
+//this will be shown when card is clicked
+.car-info{
+    background-color: #ddd;
+    width:100%;
+    padding:25px;
+    margin-top:-20px;
+    display:none; // !!change flex with none and vice versa
+    flex-direction: row;
+    font-family: $headerFont;
+    border-radius: 5px;
+    .close-info{
+        background-color: #ddd;
+        font-size: 30px;
+        position: absolute;
+        left: 85%;
+    }
+}
+.car-info1{
+    display: none; // change inline with none and vice versa 
+    background-color: #ddd;
+    width:100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-family: $primaryFont;
+}
+.view-moreBtn{
+    background-color: $primaryColor;
+    font-family: $headerFont;
+    font-size: 30px;
+    padding-left: 10px;
+    color: white;
+}
+.fa-chevron-right{
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 //design for mobile
@@ -92,7 +185,6 @@
         height: 94vh;
     }
     #intro-text{
-        color: white;
         position: relative;
         font-size: 54px;
         padding-left:2.5% ;
@@ -113,5 +205,10 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-
+    .close-info{
+        background-color: #ddd;
+        font-size: 30px;
+        position: relative;
+        left: 20%;
+    }
 }

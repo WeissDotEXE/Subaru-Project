@@ -1,3 +1,13 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
 .navbar {
   background: black;
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, black), to(#004890));
@@ -27,6 +37,9 @@
   background-size: cover;
   background-position: center;
   padding: 0px;
+  z-index: 1;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #intro-text {
@@ -68,26 +81,128 @@
   transition: 0.5s;
 }
 
-#best_selling {
+#vehicles {
   text-align: center;
-  color: white;
+  color: #333;
   font-family: "Do Hyeon", sans-serif;
-  background: black;
-  background: radial-gradient(circle, black 6%, #004890 100%);
   padding-top: 1.4%;
   padding-bottom: 1%;
+  width: 100%;
 }
 
-#best_selling #text-selling {
-  font-size: 50px;
-}
-
-.card {
-  background-color: #e7e7e7;
+#vehicles #text-vehicles {
+  font-size: 49px;
 }
 
 .mb-4 {
-  margin: 0px;
+  position: relative;
+  top: 60px;
+  margin-top: -70px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 20px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card .hover-car {
+  position: absolute;
+  bottom: 50%;
+  left: 37%;
+  display: none;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 70px;
+}
+
+.card .darrow-icon {
+  font-size: 40px;
+  position: relative;
+  left: 50%;
+  padding: 0px;
+}
+
+.card:hover {
+  background-color: #004890;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover .darrow-icon {
+  color: white;
+}
+
+.card-title {
+  text-align: center;
+}
+
+#wrxBtn {
+  outline: none;
+}
+
+#imprezaBtn {
+  outline: none;
+}
+
+#foresterBtn {
+  outline: none;
+}
+
+#brzBtn {
+  outline: none;
+}
+
+.car-info {
+  background-color: #ddd;
+  width: 100%;
+  padding: 25px;
+  margin-top: -20px;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Do Hyeon", sans-serif;
+  border-radius: 5px;
+}
+
+.car-info .close-info {
+  background-color: #ddd;
+  font-size: 30px;
+  position: absolute;
+  left: 85%;
+}
+
+.car-info1 {
+  display: none;
+  background-color: #ddd;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.view-moreBtn {
+  background-color: #004890;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 30px;
+  padding-left: 10px;
+  color: white;
+}
+
+.fa-chevron-right {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,7 +210,6 @@
     height: 94vh;
   }
   #intro-text {
-    color: white;
     position: relative;
     font-size: 54px;
     padding-left: 2.5%;
@@ -115,6 +229,12 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .close-info {
+    background-color: #ddd;
+    font-size: 30px;
+    position: relative;
+    left: 20%;
   }
 }
 /*# sourceMappingURL=index.css.map */
