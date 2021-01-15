@@ -8,6 +8,10 @@ body {
   background-color: #f9f9f9;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .navbar {
   background: black;
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, black), to(#004890));
@@ -108,21 +112,11 @@ body {
   transition: 0.6s;
 }
 
-.card .hover-car {
+.card .hover-text {
   position: absolute;
-  bottom: 50%;
-  left: 37%;
+  top: 47%;
+  left: 36%;
   display: none;
-  color: white;
-  font-family: "Do Hyeon", sans-serif;
-  font-size: 70px;
-}
-
-.card .darrow-icon {
-  font-size: 40px;
-  position: relative;
-  left: 50%;
-  padding: 0px;
 }
 
 .card:hover {
@@ -130,14 +124,10 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   color: white;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 30px 45px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card:hover .darrow-icon {
-  color: white;
 }
 
 .card-title {
@@ -152,57 +142,73 @@ body {
   outline: none;
 }
 
-#foresterBtn {
-  outline: none;
+.subaru-builds {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
 }
 
-#brzBtn {
-  outline: none;
-}
-
-.car-info {
-  background-color: #ddd;
-  width: 100%;
-  padding: 25px;
-  margin-top: -20px;
-  display: none;
+.subaru-builds .build {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 2em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: "Do Hyeon", sans-serif;
-  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.car-info .close-info {
-  background-color: #ddd;
-  font-size: 30px;
-  position: absolute;
-  left: 85%;
-}
-
-.car-info1 {
-  display: none;
-  background-color: #ddd;
+.subaru-builds .img-fluid {
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  font-family: "Roboto", sans-serif;
 }
 
-.view-moreBtn {
-  background-color: #004890;
-  font-family: "Do Hyeon", sans-serif;
-  font-size: 30px;
-  padding-left: 10px;
+.subaru-builds #last-img {
+  width: 100%;
+  height: 80%;
+  background-repeat: repeat;
+}
+
+.contact {
+  background-color: #1f1f11;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
-.fa-chevron-right {
-  font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+.contact .left-contact {
+  padding-top: 10px;
+}
+
+.contact .right-contact {
+  position: absolute;
+  right: 8%;
+  padding-top: 10px;
+}
+
+.fab {
+  font-size: 1.6em;
+}
+
+.credit {
+  background-color: #1f1f11ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 1em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

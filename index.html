@@ -33,15 +33,14 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Vehicles
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="subaru-wrx.html">Subaru WRX STI</a></li>
+            <li><a class="dropdown-item" href="impreza.html">Subaru Impreza</a></li>
+            
       </ul>
     </div>
   </div>
@@ -62,105 +61,64 @@
       <!-- WRX card+details-->
       <div class="col mb-4">
         <div class=" p-3 mb-5 ">
-          <button id="wrxBtn" class="carsBtn">
-          <div class="card">
-            <img  src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBLPGGg.img" class="card-img-top" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Subaru WRX STI</h4>
-            </div>
-          </div> 
-          </button>
+          <a href="subaru-wrx.html">
+            <button  id="wrxBtn" class="carsBtn" >
+              <div class="card">
+                <img  src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBLPGGg.img" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h2 class="hover-text">More info</h2>
+                  <h4 class="card-title">Subaru WRX STI <i id="wrx-arrow" class="fas fa-arrow-right"></i></h4>
+                </div>
+              </div> 
+              </button>
+          </a>
         </div>
       </div>
       <div class="col mb-4">
         <div class=" p-3 mb-5 ">
-          <button id="imprezaBtn" class="carsBtn">
-          <div class="card">
-            <img  src="https://external-content.duckduckgo.com/iu/?u=https://st.motortrend.com/uploads/sites/10/2017/09/2018-subaru-impreza-base-hatchback-angular-front.png&f=1&nofb=1" class="card-img-top" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Subaru Impreza</h4>
-            </div>
-          </div> 
-          </button>
+          <a href="subaru-impreza.html">
+            <button id="imprezaBtn" class="carsBtn">
+              <div class="card">
+                <img  src="https://external-content.duckduckgo.com/iu/?u=https://st.motortrend.com/uploads/sites/10/2017/09/2018-subaru-impreza-base-hatchback-angular-front.png&f=1&nofb=1" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h2 class="hover-text">More info</h2>
+                  <h4 class="card-title">Subaru Impreza <i id="impreza-arrow" class="fas fa-arrow-right"></i></h4>
+                </div>
+              </div> 
+              </button>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-
-  <!--HERE PUT THE infos for Impreza and WRX-->
-  <div id="wrx-info" class="car-info">
-    <h1 id="wrx-info-txt">Subaru WRX</h1>
-    <button class="close-info"><i class="fas fa-times"></i></button>
-  </div>
-  <div id="wrx-info1" class="car-info1">
-    <p>Duis dapibus tempus ligula, eu vulputate diam commodo ut. Sed ex mauris, luctus vel luctus nec, sagittis vel sem. 
-      Morbi varius nibh at nulla aliquet, sit amet blandit mi congue. 
-      Suspendisse potenti. Proin et felis congue, gravida ipsum ac, auctor metus. Duis maximus iaculis condimentum. Nunc sit amet dapibus dui, a placerat est.
-      Suspendisse eu felis suscipit, interdum lorem sit amet, dapibus libero.</p>
-      <a href="#">
-        <button class="view-moreBtn">View More <i class="fas fa-chevron-right"></i></button>
-      </a>
-  </div>
-
-  <div id="impreza-info" class="car-info">
-    <h1 id="impreza-info-txt">Subaru Impreza</h1>
-    <button class="close-info"><i class="fas fa-times"></i></button>
-  </div>
-  <div id="wrx-info1" class="car-info1">
-    <p>Duis dapibus tempus ligula, eu vulputate diam commodo ut. Sed ex mauris, luctus vel luctus nec, sagittis vel sem. 
-      Morbi varius nibh at nulla aliquet, sit amet blandit mi congue. 
-      Suspendisse potenti. Proin et felis congue, gravida ipsum ac, auctor metus. Duis maximus iaculis condimentum. Nunc sit amet dapibus dui, a placerat est.
-      Suspendisse eu felis suscipit, interdum lorem sit amet, dapibus libero.</p>
-      <a href="#">
-        <button class="view-moreBtn">View More <i class="fas fa-chevron-right"></i></button>
-      </a>
-  </div>
-  <!--end of infos-->
-  
+  </div>  
   <div class="about-boxer">
     <div id="jumbotron-boxer" class="jumbotron jumbotron-fluid">
       <div data-aos="fade-up" class="container">
         <h2 class="display-4">About Boxer Engine</h2>
         <p class="lead">The SUBARU BOXER engine, which powers every vehicle in the Subaru line, is renowned for its superior balance, smoothness and power delivery — and has been for 50 years now. This horizontally opposed design boasts a low centre of gravity that helps create more balanced handling, flatter cornering and greater stability on every type of road.</p><br>
         <p class="lead">It’s also an inherently compact, smooth and responsive design that feeds power directly to the drivetrain with maximum efficiency. Subaru offers a wide range of these engines — 4-cylinder and 6-cylinder, naturally aspirated and turbocharged — to suit a wide range of drivers and driving styles. Powerful stuff, we’re sure you’ll agree.</p><br>
-        <p class="lead">The ultra-low center of gravity packaging is the result of pursuing the advantages of the low center of gravity offered by the horizontally opposed Subaru Boxer engine to their limits. The Boxer engine, which had a low center of gravity to begin with, has been made lower and mounted closer to the center of the vehicle to truly lower the center of gravity of the vehicle overall</p><br>
       </div>
     </div>
   </div>
 
-  <div data-aos="fade-up"class="jumbotron subaru-history">
-    <div>
-        <h1 id="history-text" class="display-1">History of Subaru </h1>
+  
+  <!--footer for contact -->
+  <div class="contact">
+    <div class="left-contact">
+      <h3>Subaru</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec congue lorem. Nullam et tempor est, id fringilla ipsum. Mauris ut dolor quis nibh sodales aliquam. </p>
     </div>
-    <p><a id="learn-more-history"  href="about.html" role="button">Learn more</a></p>
-</div>
+    <div id="rightcontact" class="right-contact">
+      <a href=""><i class="fab fa-facebook"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
 
+  <!-- footer for credit-->
+  <div class="credit">
+    <p id="designed-by">Designed by WeissDotExe</p>
   </div>
-    <div class="container">
-      <h3 id="sm-text">Connect with Subaru</h3>
-      <div class="sm-logos">
-        <a href="https://www.facebook.com/subaruofamerica">
-          <img id="facebook-photo" width="70" height="70" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-Rm3giw7mj_8%2FVQLP1ZWAVwI%2FAAAAAAAAXw0%2FWPoJhWJu_aY%2Fs1600%2Ffacebook-iOS-icon.png&f=1&nofb=1" alt="">
-        </a>
-        <a href="https://www.instagram.com/subaru_usa/">
-          <img id="insta-photo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe7%2FInstagram_logo_2016.svg%2F1200px-Instagram_logo_2016.svg.png&f=1&nofb=1" width="70" height="70" alt="">
-        </a>
-        <a href="https://www.youtube.com/">
-          <img src="" width="70" height="70" alt="">
-        </a>
-      </div>
-    </div>
-  <div class="yes">
-    <h1>hahah</h1>
-  </div>
-  <div >
-    <h2>cahnge 2</h2>
-  </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="js/index.js"></script>
 
