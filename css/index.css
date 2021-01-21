@@ -51,7 +51,7 @@ ul {
   position: relative;
   font-size: 70px;
   padding-top: 2%;
-  font-family: "Do Hyeon", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-left: 2.5%;
   top: 20%;
   overflow: hidden;
@@ -76,7 +76,7 @@ ul {
   color: white;
   padding-left: 48px;
   padding-right: 48px;
-  font-family: "Do Hyeon", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #learnBtn:hover {
@@ -88,7 +88,7 @@ ul {
 #vehicles {
   text-align: center;
   color: #333;
-  font-family: "Do Hyeon", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 1.4%;
   padding-bottom: 1%;
   width: 100%;

@@ -1,0 +1,144 @@
+@import "./variables";
+@import "./nopadding";
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f9f9f9;
+}
+ul{
+    list-style-type: none;
+}
+.navbar{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(0,72,144,1) 100%);
+    width: 100%;
+
+}
+.navbar-brand{
+    font-family: $primaryFont;
+    font-size: 30px;
+    color: white;
+}
+.nav-link{
+    font-size: 25px;
+    font-family: $primaryFont;
+    color: white;
+    width: 100%;
+}
+.intro{
+    width: 100%;
+    margin-bottom: 37px; // !!! change for 1080p
+    #wrx-video{
+        position: absolute;
+        left: -20;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .video-overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.383);
+    }
+}
+
+.highlights{
+    text-align: center;
+    background-color:#f4f4f2 ;
+    margin: 0px;
+    padding: 15px;
+    .section-1{
+        margin-top:20px ;
+        text-align: center;
+        .row{
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            .col-sm{
+                padding: 0px;
+                width: 96%;
+            }
+        }
+        .col-sm{
+            margin: 8px;
+        }
+    }
+}
+
+
+//desktop responsiveness
+//css for screens larger than 720p(especially laptops)
+@media only screen and (min-width: 601px){
+    .intro{
+        .intro-text{
+            width: 100%;
+            font-family: $headerFont;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding-top: 7%;
+            h1{
+                font-size: 150px;
+            }
+            h2{
+                font-size: 45px;
+                padding-top: 3%;
+            }
+            #intro-arrow{
+                font-size: 40px;
+                padding-top:7%;
+            }
+        }
+    }
+}
+
+//css for 1080p and higher
+@media only screen and(min-width: 1368px){
+
+    .intro{
+        margin-bottom: 59px;
+        .intro-text{
+            #intro-text2{
+                margin-top:50px;
+            }
+            #intro-arrow{
+                padding-top: 15%;
+            }
+        }
+    }
+}
+//mobile responsiveness
+//css for desktop
+@media only screen and (max-width: 600px) {
+    .intro-text{
+        width: 100%;
+            font-family: $headerFont;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding-top: 12%;
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 35px;
+                padding-top: 20%;
+            }
+            #intro-arrow{
+                font-size: 40px;
+                padding-top:30%;
+            }
+    }
+}

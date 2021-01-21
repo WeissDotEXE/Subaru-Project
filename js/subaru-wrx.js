@@ -1,8 +1,10 @@
-$(document).ready(function(){
-    $("#buy-button").click(function(){
-      $(".list-item").hide("slow");
-    });
-    $("#more-button").click(function(){
-        $(".list-item").show("slow");
-    });
-  });
+const intro_arrow=document.querySelector('#intro-arrow');
+
+anime({
+  targets: intro_arrow,
+  translateY: 25,
+  direction: 'alternate',
+  duration:800,
+  loop:true,
+  easing: 'easeInOutSine'
+});
