@@ -1,5 +1,8 @@
 @import "./variables";
 @import "./nopadding";
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     border: 0px;
@@ -11,6 +14,9 @@ body{
 }
 ul{
     list-style-type: none;
+}
+p{
+    font-family: $primaryFont;
 }
 .navbar{
     background: rgb(0,0,0);
@@ -54,9 +60,13 @@ ul{
 
 .highlights{
     text-align: center;
-    background-color:#f4f4f2 ;
+    background-color:#e7e7e7 ;
     margin: 0px;
-    padding: 15px;
+    padding-top: 1.5%;
+    #highlight-1{
+        margin-bottom: 20px;
+        font-family: $headerFont;
+    }
     .section-1{
         margin-top:20px ;
         text-align: center;
@@ -74,10 +84,107 @@ ul{
         }
     }
 }
+#feature-txt{
+    text-align: center;
+    font-family: $headerFont;
+}
+
+.feature2{
+    background-color: black;
+}
+#wrx-engine{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0px;
+    border-right: 0px;
+}
+.infos2{
+
+    font-family: $primaryFont;
+    color: white;
+}
+.models-txt{
+    text-align: center;
+    font-family: $headerFont;
+}
+.models{
+    padding-top: 0px;
+    text-align: center;
+    font-family: $headerFont;
+    .models-info{
+        padding-top: 30px;
+    }
+    .models-p{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+}
+#left-subaru-img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+}
+
+.fill-model-right{
+    width: 0%;
+    height: 10px;
+    background-color: $primaryColor;
+    margin:auto;
+    transition: 0.3s; 
+}
+#right-model:hover{
+    .fill-model-right{
+        width: 100%;
+        transition: 0.3s;
+    }
+}
+.fill-model-left{
+    width: 0%;
+    height: 10px;
+    background-color: $primaryColor;
+    margin:auto;
+    transition: 0.3s; 
+}
+#left-model:hover{
+    .fill-model-left{
+        width: 100%;
+        transition: 0.3s;
+    }
+}
 
 
+.contact{
+    background-color: #1f1f11;
+    color: white;
+    display: flex;
+    padding-top:10px;
+    padding-left: 20px;
+    .left-contact{
+        padding-top: 10px;
+    }
+    .right-contact{
+        position: absolute;
+        right: 8%;
+        padding-top: 10px;
+
+    }
+}
+.credit{
+    background-color:#1f1f11ef;
+    display: flex;
+    padding-top:10px;
+    padding-right: 1em;
+    font-size: 13px;
+    justify-content: flex-end;
+    color: white;
+}
+//icons css
+.fab{
+    font-size:1.6em;
+}
 //desktop responsiveness
-//css for screens larger than 720p(especially laptops)
+//css for 720p screens(especially laptops)
 @media only screen and (min-width: 601px){
     .intro{
         .intro-text{
@@ -101,6 +208,48 @@ ul{
             }
         }
     }
+    .left-photo{
+        position: absolute;
+        left: 2%;
+        clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
+        width: 60%;
+    }
+    .infos1{
+        padding-top: 2%;
+        font-family: $primaryFont;
+        font-size: 1.4em;
+        width: 120%;
+    }
+    #info1{
+        padding-top: 8%;
+    }
+    #info2{
+        position: relative;
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+    #info3{
+        padding-top: 25%;
+        padding-left: 23%;
+    }
+    #wrx-engine{
+        position: relative;
+        left: 24%;
+        bottom: 15%;
+    }
+    .right-info{
+        .infos2{
+            padding-top: 11%;
+            font-size: 1.4em;
+            position: relative;
+            right: 12%;
+            font-family: $primaryFont;
+            color: white;
+        }
+    }
+    .models-txt{
+        padding-top: 4%;
+    }
 }
 
 //css for 1080p and higher
@@ -116,10 +265,37 @@ ul{
                 padding-top: 15%;
             }
         }
+    }   
+    .right-info{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+        font-size: 16px;
+    }
+    .feature2{
+        position: relative;
+        top: 220px;
+    }
+    #wrx-engine{
+        position: relative;
+        left: 51%;
+    }
+    .models-txt{
+        padding-top: 15%;
+        padding-bottom: 0px;
+    }
+    #rightcontact{
+        font-size: 28px; 
+    }
+    .left-contact{
+        h3{
+            font-size: 40px;
+        }
+        font-size:16px
     }
 }
 //mobile responsiveness
-//css for desktop
+//css for mobile
 @media only screen and (max-width: 600px) {
     .intro-text{
         width: 100%;
@@ -140,5 +316,57 @@ ul{
                 font-size: 40px;
                 padding-top:30%;
             }
+    }
+    #highlight-1{
+        margin-top: 14%;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    #wrx-feature-photo{
+        margin-bottom: 0px;
+        border: 0px;
+        padding:0px;
+    }
+    .left-photo{
+        width: 100%;
+        margin:0px;
+    }
+    .p-3.mb-5{
+        margin-bottom: 0rem!important;
+    }
+    .right-info{
+        font-size: 28px;
+        text-align: left;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: 0px;
+        border: 0px;
+        .infos1{
+            padding-left: 5%;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        .infos2{
+            padding-left: 8%;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+    }
+    .models-txt{
+        padding-top: 30px;
+        h1{
+            font-size: 50px;
+            font-family: $headerFont;
+        }
+    }
+    .left-contact{
+        font-size: 15px;
+        h3{
+            font-size: 32px;
+        }
+    }
+    #rightcontact{
+        font-size: 20px;
+        padding-top: 14px;
     }
 }

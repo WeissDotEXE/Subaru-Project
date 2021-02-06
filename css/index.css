@@ -12,6 +12,10 @@ ul {
   list-style-type: none;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   background: black;
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, black), to(#004890));
@@ -194,30 +198,54 @@ ul {
   padding-top: 10px;
 }
 
+.credit {
+  background-color: #1f1f11d5;
+}
+
 .fab {
   font-size: 1.6em;
 }
 
 .credit {
-  background-color: #1f1f11ef;
+  background-color: #1f1f11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
   padding-right: 1em;
+  font-size: 13px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .intro {
-    height: 94vh;
+@media only screen and (min-width: 1368px) {
+  #intro-text {
+    font-size: 95px;
   }
+  #intro-text1 {
+    font-size: 35px;
+  }
+  #learnBtn {
+    position: relative;
+    top: 25%;
+  }
+  .card-title {
+    font-size: 37px;
+  }
+  .left-contact h3 {
+    font-size: 50px;
+  }
+  #rightcontact {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   #intro-text {
     position: relative;
-    font-size: 54px;
+    font-size: 65px;
     padding-left: 2.5%;
     top: 10%;
     overflow: hidden;
@@ -225,22 +253,33 @@ ul {
   }
   #intro-text1 {
     font-size: 22px;
-    top: 15%;
+    top: 10%;
     text-align: center;
   }
   #learnBtn {
     margin: 0;
     position: relative;
-    top: 55%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    font-size: 30px;
   }
   .close-info {
     background-color: #ddd;
     font-size: 30px;
     position: relative;
     left: 20%;
+  }
+  .contact {
+    font-size: 15px;
+  }
+  .contact h3 {
+    font-size: 40px;
+  }
+  #rightcontact {
+    font-size: 18px;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=index.css.map */

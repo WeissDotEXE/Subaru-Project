@@ -13,6 +13,9 @@ body{
 ul{
     list-style-type: none;
 }
+p{
+    font-family: $primaryFont;
+}
 .navbar{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(0,72,144,1) 100%);
@@ -160,28 +163,54 @@ ul{
 
     }
 }
-
+.credit{
+    background-color:#1f1f11d5;
+}
 //icons css
 .fab{
     font-size:1.6em;
 }
 //footer credits
 .credit{
-    background-color:#1f1f11ef;
+    background-color:#1f1f11;
     display: flex;
     padding-top:10px;
     padding-right: 1em;
+    font-size: 13px;
     justify-content: flex-end;
     color: white;
 }
+
+//design for 1080p screens
+@media only screen and(min-width: 1368px){
+    #intro-text{
+        font-size:95px;
+    }
+    #intro-text1{
+        font-size:35px
+    }
+    #learnBtn{
+        position: relative;
+        top:25%
+    }
+    .card-title{
+        font-size: 37px;
+    }
+    .left-contact{
+        h3{
+            font-size: 50px;
+        }
+    }
+    #rightcontact{
+        font-size: 25px;
+    }
+}
 //design for mobile
 @media only screen and (max-width: 600px) {
-    .intro{
-        height: 94vh;
-    }
+    
     #intro-text{
         position: relative;
-        font-size: 54px;
+        font-size: 65px;
         padding-left:2.5% ;
         top:10%;
         overflow: hidden;
@@ -189,21 +218,32 @@ ul{
     }
     #intro-text1{
         font-size: 22px;
-        top:15%;
+        top:10%;
         text-align: center;
     }
     #learnBtn{
         margin: 0;
         position: relative;
-        top: 55%;
+        top: 40%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        font-size: 30px;
     }
     .close-info{
         background-color: #ddd;
         font-size: 30px;
         position: relative;
         left: 20%;
+    }
+    .contact{
+        h3{
+            font-size: 40px;
+        }
+        font-size: 15px;
+    }
+    #rightcontact{
+        font-size: 18px;
+        margin-top:15px; 
     }
 }
