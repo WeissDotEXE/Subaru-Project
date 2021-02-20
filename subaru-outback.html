@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subaru Impreza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/subaru-outback.css">
+    <!--first google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    <!-- script for icons in head tag-->
+    <script src="https://kit.fontawesome.com/3e9afd2c4b.js" crossorigin="anonymous"></script>
+    <!--script for anime.js-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2cbf.png" alt="" width="50" height="44" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ye">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+          </svg>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vehicles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="subaru-wrx.html">Subaru WRX STI</a></li>
+              <li><a class="dropdown-item" href="subaru-outback.html">Subaru Outback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="intro">
+    <div class="intro-text">
+      <h1 id="intro-text1">Subaru Outback 2021</h1>
+      <h2 id="intro-text2">For your every action</h2>
+      <i id="intro-arrow" class="fas fa-angle-double-down"></i>
+    </div>
+    <div class="img-overlay"></div>
+    <img id="intro-img" src="https://www.teahub.io/photos/full/215-2157470_wallpaper-subaru-outback-subaru-crossover-blue-iphone-wallpaper.jpg" alt="">
+  </div>
+
+  <div class="interior">
+    <h1 id="interior-highlight">INTERIOR</h1>
+    <div class="left-interior">
+      <img id="interior-img1" class="img-fluid" src="https://images.caricos.com/s/subaru/2018_subaru_wrx_and_wrx_sti/images/2560x1440/2018_subaru_wrx_and_wrx_sti_16_2560x1440.jpg" alt="">
+      <div class="left-txt">
+        <h2>Sport Interior</h2>
+        <p>Some Text</p>
+      </div>
+    </div>
+    <div class="right-interior">
+      <img id="interior-img2" class="img-fluid" src="https://images.caricos.com/s/subaru/2019_subaru_ascent/images/2560x1440/2019_subaru_ascent_10_2560x1440.jpg" alt="">
+      <div class="right-txt">
+        <h2>Standard interior</h2>
+        <p>Some Text</p>
+      </div>
+    </div>
+  </div>
+  
+  <h1 id="performance-highlight">PERFORMANCE</h1>  
+  <div id="ye" class="performance">
+    <div class="performance-stats">
+      <table>
+        <tr>
+          <h3 style="margin-left: 10px;">Standard edition</h3>
+        <div>
+          <td><h5>HP</h5></td>
+          <td class="hp">
+            <div class="hp-back"></div>
+            <div id="standard-hp" class="hp-front"></div>
+          </td>
+          <td><p>168</p></td>
+        </div>
+        </tr>
+        <tr>
+          <td><h5>Top Speed</h5></td>
+          <td class="speed">
+            <div class="speed-back"></div>
+            <div id="standard-speed" class="speed-front"></div>
+          </td>
+          <td><p>210 KPH</p></td>
+        </tr>
+        <tr>
+          <td><h5>0-100KPH</h5></td>
+          <td class="acc">
+            <div class="acc-back"></div>
+            <div id="standard-acc" class="acc-front"></div>
+          </td>
+          <td><p>8.6s</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="performance-img">
+      <img id="performance-img1" src="https://images.dealer.com/ddc/vehicles/2020/Subaru/Outback/SUV/perspective/front-left/2020_76.png" alt="">
+    </div>
+    
+  </div>
+  <div id="second-performance" class="performance">
+    <div class="performance-stats">
+      <table>
+        <tr>
+          <h3 style="margin-left: 10px;">Sport edition</h3>
+        <div>
+          <td><h5>HP</h5></td>
+          <td class="hp">
+            <div class="hp-back"></div>
+            <div id="sport-hp" class="hp-front"></div>
+          </td>
+          <td><p>203</p></td>
+        </div>
+        </tr>
+        <tr>
+          <td><h5>Top Speed</h5></td>
+          <td class="speed">
+            <div class="speed-back"></div>
+            <div id="sport-speed" class="speed-front"></div>
+          </td>
+          <td><p>230 KPH</p></td>
+        </tr>
+        <tr>
+          <td><h5>0-100KPH</h5></td>
+          <td class="acc">
+            <div class="acc-back"></div>
+            <div id="sport-acc" class="acc-front"></div>
+          </td>
+          <td><p>6.6s</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="performance-img">
+      <img id="performance-img2" src="https://crdms.images.consumerreports.org/c_lfill,w_720,q_auto,f_auto/prod/cars/cr/model-years/8218-2018-subaru-outback" alt="">
+    </div>
+  </div>
+
+  <div class="quote">
+    <h4 id="name-quote">Fictive person</h4>
+    <h1 id="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, eaque placeat! Ipsam adipisci expedita aliquid a voluptates corrupti doloribus tempora!"</h1>
+  </div>
+
+    <!-- contact and credit-->
+  <div class="contact">
+      <div class="left-contact">
+        <h3>Subaru</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec congue lorem. Nullam et tempor est, id fringilla ipsum. Mauris ut dolor quis nibh sodales aliquam. </p>
+      </div>
+      <div id="rightcontact" class="right-contact">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div>
+  </div>
+
+  <!-- footer for credit-->
+  <div class="credit">
+    <p id="designed-by">Designed by WeissDotExe</p>
+  </div>
+      <!--link for js -->
+      <!--script for waypoint js-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/subaru-outback.js"></script>
+    </body>
+</html>

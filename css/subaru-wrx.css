@@ -127,7 +127,7 @@ p {
 }
 
 .models {
-  padding-top: 0px;
+  padding: 20px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -146,10 +146,37 @@ p {
   transform: scaleX(-1);
 }
 
+#left-model {
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#left-model:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.287);
+          box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.287);
+}
+
+#right-model {
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#right-model:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 3px 3px 30px 10px rgba(0, 0, 0, 0.287);
+          box-shadow: 3px 3px 30px 10px rgba(0, 0, 0, 0.287);
+}
+
 .fill-model-right {
   width: 0%;
   height: 10px;
-  background-color: #004890;
+  background: #003060;
+  background: radial-gradient(circle, #003060 0%, #004890 100%);
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -164,7 +191,8 @@ p {
 .fill-model-left {
   width: 0%;
   height: 10px;
-  background-color: #004890;
+  background: #003060;
+  background: radial-gradient(circle, #003060 0%, #004890 100%);
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -241,15 +269,16 @@ p {
     -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
     width: 60%;
+    height: auto;
   }
   .infos1 {
-    padding-top: 2%;
+    margin-top: 2%;
     font-family: "Roboto", sans-serif;
     font-size: 1.4em;
     width: 120%;
   }
   #info1 {
-    padding-top: 8%;
+    margin-top: 6%;
   }
   #info2 {
     position: relative;
@@ -289,21 +318,19 @@ p {
     padding-top: 15%;
   }
   .right-info {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    border-bottom: 0px;
+    padding-top: 13%;
     font-size: 16px;
   }
   .feature2 {
     position: relative;
-    top: 220px;
+    top: 140px;
   }
   #wrx-engine {
     position: relative;
     left: 51%;
   }
   .models-txt {
-    padding-top: 15%;
+    padding-top: 11%;
     padding-bottom: 0px;
   }
   #rightcontact {

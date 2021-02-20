@@ -110,7 +110,7 @@ p{
     font-family: $headerFont;
 }
 .models{
-    padding-top: 0px;
+    padding: 20px;
     text-align: center;
     font-family: $headerFont;
     .models-info{
@@ -125,11 +125,27 @@ p{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); 
 }
-
+#left-model{
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#left-model:hover{
+    transition: 0.5s;
+    box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.287);
+}
+#right-model{
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#right-model:hover{
+    transition: 0.5s;
+    box-shadow: 3px 3px 30px 10px rgba(0, 0, 0, 0.287);
+}
 .fill-model-right{
     width: 0%;
     height: 10px;
-    background-color: $primaryColor;
+    background: rgb(0,48,96);
+    background: radial-gradient(circle, rgba(0,48,96,1) 0%, rgba(0,72,144,1) 100%);
     margin:auto;
     transition: 0.3s; 
 }
@@ -142,7 +158,8 @@ p{
 .fill-model-left{
     width: 0%;
     height: 10px;
-    background-color: $primaryColor;
+    background: rgb(0,48,96);
+    background: radial-gradient(circle, rgba(0,48,96,1) 0%, rgba(0,72,144,1) 100%);
     margin:auto;
     transition: 0.3s; 
 }
@@ -152,7 +169,6 @@ p{
         transition: 0.3s;
     }
 }
-
 
 .contact{
     background-color: #1f1f11;
@@ -213,15 +229,16 @@ p{
         left: 2%;
         clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
         width: 60%;
+        height: auto;
     }
     .infos1{
-        padding-top: 2%;
+        margin-top: 2%;
         font-family: $primaryFont;
         font-size: 1.4em;
         width: 120%;
     }
     #info1{
-        padding-top: 8%;
+        margin-top: 6%;
     }
     #info2{
         position: relative;
@@ -267,21 +284,19 @@ p{
         }
     }   
     .right-info{
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        border-bottom: 0px;
+        padding-top: 13%;
         font-size: 16px;
     }
     .feature2{
         position: relative;
-        top: 220px;
+        top: 140px;
     }
     #wrx-engine{
         position: relative;
         left: 51%;
     }
     .models-txt{
-        padding-top: 15%;
+        padding-top: 11%;
         padding-bottom: 0px;
     }
     #rightcontact{
