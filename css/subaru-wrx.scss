@@ -24,6 +24,25 @@ p{
     width: 100%;
 
 }
+.transition{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    display: block;
+    z-index: 5;
+    .logo{
+        width: 70%;
+        height: 70%;
+        margin: 0;
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
 .navbar-brand{
     font-family: $primaryFont;
     font-size: 30px;
@@ -66,6 +85,9 @@ p{
     #highlight-1{
         margin-bottom: 20px;
         font-family: $headerFont;
+        position: relative;
+        bottom: 50px;
+        opacity: 0;
     }
     .section-1{
         margin-top:20px ;
@@ -88,7 +110,9 @@ p{
     text-align: center;
     font-family: $headerFont;
 }
-
+#info1,#info2,#info3{
+    opacity:0;
+}
 .feature2{
     background-color: black;
 }
@@ -101,7 +125,7 @@ p{
     border-right: 0px;
 }
 .infos2{
-
+    opacity: 0;
     font-family: $primaryFont;
     color: white;
 }
@@ -211,6 +235,7 @@ p{
             color: white;
             text-align: center;
             padding-top: 7%;
+            opacity: 0;
             h1{
                 font-size: 150px;
             }
@@ -312,30 +337,43 @@ p{
 //mobile responsiveness
 //css for mobile
 @media only screen and (max-width: 600px) {
+    .transition{
+        .logo{
+            left: 57%;
+        }
+    }
     .intro-text{
         width: 100%;
-            font-family: $headerFont;
-            position: relative;
-            z-index: 2;
-            color: white;
-            text-align: center;
-            padding-top: 12%;
-            h1{
-                font-size: 70px;
-            }
-            h2{
-                font-size: 35px;
-                padding-top: 20%;
-            }
-            #intro-arrow{
-                font-size: 40px;
-                padding-top:30%;
-            }
+        font-family: $headerFont;
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        padding-top: 20%;
+        opacity: 0;
+        h1{
+            font-size: 70px;
+        }
+        h2{
+            font-size: 35px;
+            padding-top: 20%;
+        }
+        #intro-arrow{
+            font-size: 40px;
+            padding-top:30%;
+        }
     }
-    #highlight-1{
-        margin-top: 14%;
-        padding-top: 20px;
-        font-size: 40px;
+    .highlights{
+        #highlight-1{
+            margin-top: 1%;
+            padding-top: 20px;
+            font-size: 40px;
+            display: none;
+        }
+
+    }
+    #feature-txt{
+        margin-top: 20px;
     }
     #wrx-feature-photo{
         margin-bottom: 0px;
@@ -356,6 +394,10 @@ p{
         padding-top: 0px;
         margin: 0px;
         border: 0px;
+        #info1,#info2,#info3{
+            position: relative;
+            bottom: 28px;
+        }
         .infos1{
             padding-left: 5%;
             font-size: 20px;

@@ -1,13 +1,34 @@
 const intro_arrow=document.querySelector('#intro-arrow');
 
+//animation for transtition
+anime({
+  targets:'.logo',
+  opacity:1,
+  duration:500,
+  easing:'easeInOutSine',
+  delay:200,
+})
+anime({
+  targets:'.transition',
+  opacity:0,
+  duration:300,
+  delay:1800,
+  easing:'easeInOutSine',
+  display:'none',
+  complete: function(anim) {
+    $(".transition").fadeOut("slow");
+  }
+})
+
 //animation for intro text when page loaded
 anime({
   targets: '.intro-text',
   translateY: -30,
-  direction: 'reverse',
-  easing: 'easeInOutSine',
+  opacity:1,
+  direction:'normal',
   duration:1000,
-  opacity:0
+  easing:'easeInOutSine',
+  delay: 2200
 });
 //loop animation for intro arrow
 anime({

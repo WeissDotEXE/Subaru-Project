@@ -27,6 +27,28 @@ p {
   width: 100%;
 }
 
+.transition {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  display: block;
+  z-index: 5;
+}
+
+.transition .logo {
+  width: 70%;
+  height: 70%;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
 .navbar-brand {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -76,6 +98,9 @@ p {
 .highlights #highlight-1 {
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
 }
 
 .highlights .section-1 {
@@ -103,6 +128,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+#info1, #info2, #info3 {
+  opacity: 0;
+}
+
 .feature2 {
   background-color: black;
 }
@@ -117,6 +146,7 @@ p {
 }
 
 .infos2 {
+  opacity: 0;
   font-family: "Roboto", sans-serif;
   color: white;
 }
@@ -251,6 +281,7 @@ p {
     color: white;
     text-align: center;
     padding-top: 7%;
+    opacity: 0;
   }
   .intro .intro-text h1 {
     font-size: 150px;
@@ -345,6 +376,9 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .transition .logo {
+    left: 57%;
+  }
   .intro-text {
     width: 100%;
     font-family: "Montserrat", sans-serif;
@@ -352,7 +386,8 @@ p {
     z-index: 2;
     color: white;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 20%;
+    opacity: 0;
   }
   .intro-text h1 {
     font-size: 70px;
@@ -365,10 +400,14 @@ p {
     font-size: 40px;
     padding-top: 30%;
   }
-  #highlight-1 {
-    margin-top: 14%;
+  .highlights #highlight-1 {
+    margin-top: 1%;
     padding-top: 20px;
     font-size: 40px;
+    display: none;
+  }
+  #feature-txt {
+    margin-top: 20px;
   }
   #wrx-feature-photo {
     margin-bottom: 0px;
@@ -389,6 +428,10 @@ p {
     padding-top: 0px;
     margin: 0px;
     border: 0px;
+  }
+  .right-info #info1, .right-info #info2, .right-info #info3 {
+    position: relative;
+    bottom: 28px;
   }
   .right-info .infos1 {
     padding-left: 5%;
