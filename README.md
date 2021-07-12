@@ -8,10 +8,10 @@ Subaru Romania Website: https://www.subarumotors.ro/
 My website: https://weissdotexe.github.io/Subaru-Project/index.html
 
   After builidng this website I learned:
-  -responsive design
-  -working with videos as backgrounds
-  -working with simple animations
-  -SaSS( variables and structure)
-  -BootStrap
-  -waypoints
+  1. responsive design
+  2. working with videos as backgrounds
+  3. working with simple animations
+  4. SaSS( variables and structure)
+  5. BootStrap
+  6. waypoints
 
